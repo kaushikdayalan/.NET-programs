@@ -1,5 +1,5 @@
 using System;
-class passByRefference{
+class passByValue{
     public int multiply(int a, int b){
         int c = a*b;
         return c;
@@ -10,7 +10,7 @@ class passByRefference{
         Console.WriteLine("enter two numbers x,y: ");
         x = Convert.ToInt32(Console.ReadLine());
         y = Convert.ToInt32(Console.ReadLine());
-        passByRefference p = new passByRefference();
+        passByValue p = new passByValue();
         output = p.multiply(x,y);
         Console.WriteLine("answer obtained through pass by value "+output);
         Console.ReadLine();
