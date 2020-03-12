@@ -12,13 +12,12 @@ namespace exp
             int c = a/b;
             Console.WriteLine("the answer is: ",c);
         }
-        catch(DivideByZeroException ex)
+        catch (DivideByZeroException e) {
+            Console.WriteLine("error: {0}", e.Message);
+         }
+        catch(FormatException e)
         {
-            Console.WriteLine("error: ",ex.Message);
-        }
-        catch(FormatException ex1)
-        {
-            Console.WriteLine("error: ",ex1.Message);
+            Console.WriteLine("error: {0}", e.Message);
         }
         Console.ReadLine();
     }
