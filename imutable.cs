@@ -16,7 +16,7 @@ class test{
         w1.Stop();
         w2.Start();
         for ( i=0; i<10000; i++){
-            s2.Append(i);
+            s2 = s2+i;
         }
         Console.WriteLine(s1);
         Console.WriteLine(s2);
